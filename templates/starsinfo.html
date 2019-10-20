@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Get a star</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<style>
+  body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+thead, tbody { display: block; position:sticky; }
+
+tbody {
+    height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+
+
+
+
+</style>
+<body>
+<div class="container width=50% height=75% bg-light mt-5">
+
+        <table class="table table-fixed table-striped table-bordered table-sm py-2"
+    width="50%">
+  <!-- table header -->
+  <tr>
+      <th scope="col" class="thead-dark">Question</th>
+      <th scope="col" class="thead-dark">Details</th>
+
+  </tr>
+     {% for val in stars %}
+    <tr>
+     <td> {{ val }} </td>
+      <td>  <form action="" method="POST">
+          <button class="btn btn-primary" type="submit" name="details" value="{{ val }}">Details</button> </form> </td>
+        </tr>
+     {% endfor %}
+
+
+</table>
+
+</div>
+ <div class="row">
+      <div class="col text-center">
+  <a href="{{url_for('intro_page')}}"  class="btn btn-primary btn-lg" role="button">BACK</a>
+        </div>
+</body>
+</html>

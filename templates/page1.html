@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add or view stars</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+  body {
+  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card border-warning bg-light text-center">
+    <div class="card-body ">
+      <h1 class="font-weight-bold text-center">Interview Prep STAR Questions</h1>
+      <p class="lead text-center">This application allows you to record important STAR behavioural questions and access them any time you want!!!</p>
+      <br>
+      <div class="row">
+       <div class="col text-center">
+  <a href="{{url_for('get_stardata')}}"  class="btn btn-primary btn-lg" role="button">Create STAR</a>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col text-center">
+  <a href="{{url_for('star_info')}}"  class="btn btn-primary btn-lg" role="button">View STARS</a>
+        </div>
+    </div>
+      <div style="height: 200px"></div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="container">-->
+  <!--<h1 class="text-center">Track your stars</h1>-->
+
+    <!--<div class="row">-->
+    <!--<div class="col">-->
+    <!--</div>-->
+    <!--<div class="col">-->
+      <!--<div class="w-full text-center">-->
+  <!--<a href="{{url_for('get_stardata')}}"  class="btn btn-primary btn-lg" role="button">Create Star</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col">-->
+
+    <!--</div>-->
+  <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="col">-->
+
+    <!--</div>-->
+    <!--<div class="col">-->
+     <!--<div class="w-full text-center">-->
+  <!--<a href="{{url_for('star_info')}}"  class="btn btn-primary btn-lg" role="button">View stars</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col">-->
+
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+
+</body>
+</html>
+
